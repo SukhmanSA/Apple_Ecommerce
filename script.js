@@ -158,3 +158,17 @@ watchLeftControl.addEventListener('click', () => {
     watchBands.style.marginLeft = `${axisX}rem`;
     hideControl();
 });
+
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 95,
+      stretch: 0,
+      depth: 90,
+      modifier: 1.1,
+      slideShadows: true,
+    },
+  });
